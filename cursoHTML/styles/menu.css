@@ -1,0 +1,58 @@
+/* Quita margenes para todos los componentes. */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Identificador*/
+#header{
+    margin: auto;
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;			
+}
+
+/* Quitar viñetas */
+ul{
+    list-style: none;
+}
+
+/* Clase (punto) */
+.nav > li{
+    float: left;
+}
+
+/* Enlaces */
+/* Buscamos en Internet COLORES HTML */
+.nav li a{
+    background-color: #1097E1;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}
+
+
+.nav li a:hover{
+    background-color: rgb(43, 29, 112);
+}
+
+/* Desaparecer submenus*/
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+/* Aparecer submenus cuando pase el cursor*/
+.nav li:hover > ul{
+    display: block;
+}
+.nav li ul li{
+    position: relative;
+}
+
+/* Agregar separadores y no se muestren aglomerados */
+/*.nav li ul li ul{
+    right: -140px;
+    top: 0px;
+}*/
